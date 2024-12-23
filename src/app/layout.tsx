@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   
-  description: "Sou um apaixonado desenvolvedor fullstack, dedicado a criar experiências online excepcionais. Com 5 anos e 2 meses de experiência na indústria de desenvolvimento, estou empenhado em construir aplicações web de alta qualidade que combinam a beleza do design com a funcionalidade.",
+  description: "Sou um apaixonado desenvolvedor fullstack, dedicado a criar experiências online excepcionais. Com mais 5 anos de experiência na indústria de desenvolvimento, estou empenhado em construir aplicações web de alta qualidade que combinam a beleza do design com a funcionalidade.",
   keywords: [
     "Criação de Sistemas Web",
     "Desenvolvimento Web",

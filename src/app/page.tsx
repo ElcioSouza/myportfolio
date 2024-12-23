@@ -148,7 +148,7 @@ export default function Home() {
               <div>
                 <p className="mb-3 text-xl leading-[30px]">
                   Sou um apaixonado desenvolvedor fullstack, dedicado a criar
-                  experiências online excepcionais. Com 5 anos e 2 meses de
+                  experiências online excepcionais. Com mais 5 anos de
                   experiência na indústria de desenvolvimento, estou empenhado
                   em construir aplicações web de alta qualidade que combinam a
                   beleza do design com a funcionalidade.
