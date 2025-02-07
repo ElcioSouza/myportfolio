@@ -339,7 +339,7 @@ export default function Home() {
                   </div>
                   <div>
                     <TextArea
-                      name="msg"
+                      name="message"
                       register={register}
                       className="w-full pl-6 bg-[#eff1f4] border-[2px] outline-none  border-[#ddd] rounded-lg"
                       placeholder="Mensagem"
