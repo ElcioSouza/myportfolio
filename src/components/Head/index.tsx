@@ -4,7 +4,7 @@ export function HeadPage() {
   return (
     <>
       <Head>
-        <meta property="og:title" content="My page title" key="title" />
+      <meta property="og:image" content="./logo.png" />
       </Head>
     </>
   )
