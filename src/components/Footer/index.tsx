@@ -31,7 +31,7 @@ export default function Footer({
             </Link>
           </div>
           <div>
-            <h2 className="text-[1.5rem] font-bold">Check Mate Tecnologia</h2>
+            <h2 className="text-[1.5rem] font-bold">Links</h2>
             <div>
               <ul>
                 {ItemMenu &&
