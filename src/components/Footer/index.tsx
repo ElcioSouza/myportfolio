@@ -27,10 +27,7 @@ export default function Footer({
         <div className="flex flex-col justify-center md:flex-row gap-7 md:justify-between md:px-5">
           <div className="self-center">
             <Link href="/" className="block">
-              <div
-                className="w-[300px] h-[100px] md:w-[300px] md:h-[300px] bg-contain bg-no-repeat bg-left md:bg-center"
-                style={{ backgroundImage: `url('/img/logowhite.png')` }}
-              ></div>
+            <h1 className="text-2xl font-bold pl-1 text-[40px]"><span className="text-[#fff]">ELCIO </span>DEV</h1>
             </Link>
           </div>
           <div>

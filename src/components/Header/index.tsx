@@ -53,7 +53,7 @@ export default function Header({
 
   return (
     <header
-      className={`fixed top-0 left-0 z-40 w-full flex justify-end xl:justify-center min-h-[10rem] shadow-[0_3px_6px_rgba(0,0,0,0.1)] py-0 md:py-2 
+      className={`fixed top-0 left-0 z-40 w-full flex justify-end xl:justify-center min-h-[7rem] shadow-[0_3px_6px_rgba(0,0,0,0.1)] py-0 md:py-2 
       ${
         scrollMenu
           ? "bg-transparent md:bg-white"
@@ -75,27 +75,18 @@ export default function Header({
           !openMenu
             ? "translate-x-full xl:translate-x-0"
             : "translate-x-0 transition-transform duration-500"
-        } bg-white xl:bg-transparent flex flex-col xl:flex-row pt-20 xl:pt-0 fixed top-0 right-0 xl:right-auto w-full max-w-80 xl:max-w-7xl max-h-screen h-full xl:h-auto z-50 w-ful mx-auto gap-5 items-center justify-start xl:justify-between
+        } min-h-[7rem] bg-white xl:bg-transparent flex flex-col xl:flex-row pt-20 xl:pt-0 fixed top-0 right-0 xl:right-auto w-full max-w-80 xl:max-w-7xl max-h-screen h-full xl:h-auto z-50 w-ful mx-auto gap-5 items-center justify-start xl:justify-between
           `}
       >
         <div className="hidden xl:flex">
           <Link href="/">
             {scrollMenu}
             {scrollMenu ? (
-              <Image
-                src="/img/logo.png"
-                alt="logo"
-                width={224}
-                height={70}
-              ></Image>
+              <h1 className="text-2xl font-bold pl-1 hover:tracking-widest duration-300 text-[40px]"><span className="text-blue-500">ELCIO </span>DEV</h1>
             ) : (
-              <Image
-                src="/img/logowhite.png"
-                alt="logo"
-                className=" xl:block"
-                width={224}
-                height={70}
-              ></Image>
+            <h1 className="font-oswald font-bold uppercase tracking-normal hover:tracking-widest duration-300 text-white shadow-md text-[40px]">
+              ELCIO DEV
+            </h1>
             )}
           </Link>
         </div>

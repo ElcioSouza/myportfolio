@@ -57,7 +57,7 @@ export default function Home() {
         id="home"
       >
         <div className="max-w-7xl mx-auto flex justify-center items-center min-h-[600px]">
-          <div className="mt-[1.9rem]">
+          <div className="mt-[4rem]">
             <div>
               <div>
                 <div className="mt-10 xl:mt-auto">
