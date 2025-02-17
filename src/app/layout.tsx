@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     "Desenvolvimento Web",
     "Manutenção Web",
   ],
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico'
+  },
   title: {
     default: "Elcio Monico Portfolio",
     template: "%s | Elcio Monico Portfolio",
