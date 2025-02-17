@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { ItemMenu } from "@/constant/ItemMenu";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 import { HeadPage } from "@/components/Head";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,11 @@ export const metadata: Metadata = {
     "Desenvolvimento Web",
     "Manutenção Web",
   ],
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico'
+  },
   title: {
     default: "Elcio Monico Portfolio",
     template: "%s | Elcio Monico Portfolio",

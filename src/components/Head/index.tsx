@@ -1,4 +1,3 @@
-"use client";
 import Head from 'next/head'
  
 export function HeadPage() {
@@ -7,7 +6,6 @@ export function HeadPage() {
       <Head>
         <meta property="og:title" content="My page title" key="title" />
       </Head>
-      <p>Hello world!</p>
     </>
   )
 }
