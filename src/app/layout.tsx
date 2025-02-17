@@ -34,6 +34,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={`${inter.className}`}>
+      <Head>
+        <link rel="icon" sizes="364x364" href="/favicon.ico" />
+        <meta property="og:image"  content="/logo.png" />
+      </Head>
       <body className="bg-white">
         <Header active={true} ItemMenu={ItemMenu} />
         {children}
