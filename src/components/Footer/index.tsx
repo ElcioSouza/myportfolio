@@ -25,9 +25,9 @@ export default function Footer({
     <footer className="bg-[#1F2740] text-white pt-8">
       <div className="max-w-[280px] md:max-w-7xl w-full mx-auto">
         <div className="flex flex-col justify-center md:flex-row gap-7 md:justify-between md:px-5">
-          <div className="self-center">
-            <Link href="/" className="block">
-            <h1 className="text-2xl font-bold pl-1 text-[40px]"><span className="text-[#fff]">ELCIO </span>DEV</h1>
+          <div className="self-center w-full">
+            <Link href="/" className="block w-full">
+            <h2 className="text-2xl font-bold pl-1 text-3xl sm:text-[40px]">ELCIO DEV</h2>
             </Link>
           </div>
           <div>

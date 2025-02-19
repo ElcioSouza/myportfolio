@@ -82,11 +82,11 @@ export default function Header({
           <Link href="/">
             {scrollMenu}
             {scrollMenu ? (
-              <h1 className="text-2xl font-bold pl-1 hover:tracking-widest duration-300 text-[40px]"><span className="text-blue-500">ELCIO </span>DEV</h1>
+              <div className="mx-2 text-3xl font-bold pl-1 hover:tracking-widest duration-300 sm:text-[40px]"><span className="text-blue-500">ELCIO </span>DEV</div>
             ) : (
-            <h1 className="font-oswald font-bold uppercase tracking-normal hover:tracking-widest duration-300 text-white shadow-md text-[40px]">
+            <div className="mx-2 font-oswald font-bold uppercase  tracking-normal hover:tracking-widest duration-300 text-white shadow-md text-3xl sm:text-[40px]">
               ELCIO DEV
-            </h1>
+            </div>
             )}
           </Link>
         </div>

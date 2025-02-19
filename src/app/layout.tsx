@@ -4,8 +4,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { ItemMenu } from "@/constant/ItemMenu";
 import Footer from "@/components/Footer";
-import Head from "next/head";
-import { HeadPage } from "@/components/Head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const dynamic = "force-dynamic";
@@ -40,7 +38,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={`${inter.className}`}>
-      <HeadPage />
       <body className="bg-white">
         <Header active={true} ItemMenu={ItemMenu} />
         {children}
