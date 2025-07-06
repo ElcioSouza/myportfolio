@@ -1,22 +1,27 @@
 export const ItemMenu = [
   {
-    id:"home",
+    id: "home",
     label: "Inicio",
     href: "#home",
   },
   {
-    id:"specialty",
+    id: "specialty",
     label: "Especialidade",
     href: "#specialty",
   },
   {
-    id:"differential",
+    id: "differential",
     label: "Diferencial",
     href: "#differential",
   },
   {
-    id:"contact",
+    id: "curriculo",
+    label: "Currículo",
+    href: "/docs/Elcio_Curriculo.pdf",
+  },
+  {
+    id: "contact",
     label: "Contato",
     href: "#contact",
-  },
+  }
 ];

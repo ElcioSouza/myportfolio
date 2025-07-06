@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import React from "react";
 import { date } from "@/utils/date";
 import NavLinksController from "@/controllers/NavLinksController";
@@ -25,9 +25,9 @@ export default function Footer({
     <footer className="bg-[#1F2740] text-white pt-8">
       <div className="max-w-[280px] md:max-w-7xl w-full mx-auto">
         <div className="flex flex-col justify-center md:flex-row gap-7 md:justify-between md:px-5">
-          <div className="self-center w-full">
-            <Link href="/" className="block w-full">
-            <h2 className="text-2xl font-bold pl-1 text-3xl sm:text-[40px]">ELCIO DEV</h2>
+          <div className="self-center w-full md:w-auto">
+            <Link href="/" className="block">
+            <div className="font-bold pl-0 lg:pl-0 text-[24px] lg:text-[40px] ">ELCIO DEV</div>
             </Link>
           </div>
           <div>
@@ -56,11 +56,13 @@ export default function Footer({
           </div>
           <div className="foooter-social xl:max-w-[150px] w-full md:max-w-auto md:w-auto md:self-start">
             <h2 className="text-[1.5rem] font-bold text-left">Siga-me</h2>
+            <div className="flex gap-[1rem] ">
             <Link target="_blank" href="https://www.linkedin.com/in/elciomonico">
               <div className="social bg-white h-[40px] w-[40px] rounded-full flex justify-center items-center hover:bg-[#0a66c2] hover:text-white transition duration-700 hover:scale-125 mt-4">
                 <FaLinkedinIn className="linkedin text-[20px] text-black" />
               </div>
             </Link>
+            </div>
           </div>
         </div>
       </div>

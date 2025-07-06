@@ -75,18 +75,20 @@ export default function Header({
           !openMenu
             ? "translate-x-full xl:translate-x-0"
             : "translate-x-0 transition-transform duration-500"
-        } min-h-[7rem] bg-white xl:bg-transparent flex flex-col xl:flex-row pt-20 xl:pt-0 fixed top-0 right-0 xl:right-auto w-full max-w-80 xl:max-w-7xl max-h-screen h-full xl:h-auto z-50 w-ful mx-auto gap-5 items-center justify-start xl:justify-between
+        } bg-white min-h-[7rem] xl:bg-transparent flex flex-col xl:flex-row pt-20 xl:pt-0 fixed top-0 right-0 xl:right-auto w-full max-w-80 xl:max-w-7xl max-h-screen h-full xl:h-auto z-50 w-ful mx-auto gap-5 items-center justify-start xl:justify-between
           `}
       >
         <div className="hidden xl:flex">
           <Link href="/">
             {scrollMenu}
             {scrollMenu ? (
-              <div className="mx-2 text-3xl font-bold pl-1 hover:tracking-widest duration-300 sm:text-[40px]"><span className="text-blue-500">ELCIO </span>DEV</div>
+              <div className="font-bold mx-2 hover:tracking-widest duration-300 text-[24px] sm:text-[40px] ">
+                <span className="text-blue-500">ELCIO </span>DEV
+              </div>
             ) : (
-            <div className="mx-2 font-oswald font-bold uppercase  tracking-normal hover:tracking-widest duration-300 text-white shadow-md text-3xl sm:text-[40px]">
-              ELCIO DEV
-            </div>
+              <div className="font-oswald font-bold uppercase tracking-normal hover:tracking-widest duration-300 text-white shadow-md text-[40px]  mx-2">
+                ELCIO DEV
+              </div>
             )}
           </Link>
         </div>
@@ -96,12 +98,21 @@ export default function Header({
               <li
                 key={index}
                 onClick={() => {
-                  NavLinksController.execute(item.id);
-                  setOpenMenu(false);
+                  // Only use NavLinksController for internal links (those starting with #)
+                  if (item.href.startsWith("#")) {
+                    NavLinksController.execute(item.id);
+                    setOpenMenu(false);
+                  }
                 }}
               >
                 <Link
                   href={item.href}
+                  target={item.href.startsWith("#") ? undefined : "_blank"}
+                  rel={
+                    item.href.startsWith("#")
+                      ? undefined
+                      : "noopener noreferrer"
+                  }
                   className={`${
                     scrollMenu
                       ? "text-black"
