@@ -23,7 +23,7 @@ export default function SpecialtySection() {
             </div>
 
             <p className="text-gray-600 mb-4 text-xl leading-[30px]">
-              Sou desenvolvedor fullstack com mais de 5 anos de experiência em
+              Sou desenvolvedor fullstack formado Análise e Desenvolvimento de Sistemas com mais de 5 anos de experiência em
               desenvolvimento, atuo tanto no front-end quanto no back-end,
               seguindo a metodologia Scrum para gerenciamento ágil de projetos.
               Trabalho com arquitetura de software e microserviços, aplico
@@ -50,6 +50,9 @@ export default function SpecialtySection() {
                   </span>
                   <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
                     Next.js
+                  </span>
+                  <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
+                    React Native
                   </span>
                   <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
                     HTML5
