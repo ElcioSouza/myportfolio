@@ -20,7 +20,7 @@ export default function HeroSection() {
                 <div className="rounded-full bg-[url('/img/profile.jpg')] bg-cover bg-center w-[120px] h-[120px] mx-auto   border-white border-[1.4px] duration-700 hover:scale-110"></div>
                 <div>
                   <h1 className="text-center text-white font-bold text-3xl mt-3">
-                    Elcio de Souza Monico
+                    Elcio de Souza Monico.
                   </h1>
                   <p className="text-center text-white mt-3 ">
                     Full Stack Developer
