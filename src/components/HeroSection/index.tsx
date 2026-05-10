@@ -23,7 +23,7 @@ export default function HeroSection() {
                     Elcio de Souza Monico.
                   </h1>
                   <p className="text-center text-white mt-3 ">
-                    Full Stack Developer
+                    Full Stack Developer 
                   </p>
                 </div>
                 <div className="flex justify-center items-center mt-3 gap-3">
